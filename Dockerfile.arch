@@ -24,5 +24,6 @@ RUN mkdir ${TOOLS_PATH} \
 # Add Toolchain to PATH
 ENV PATH="$PATH:${TOOLS_PATH}/bin"
 
-ADD build.sh /usr/local/bin/build.sh
-ENTRYPOINT ["/usr/local/bin/build.sh"]
+# ADD build.sh /usr/local/bin/build.sh
+# ENTRYPOINT ["/usr/local/bin/build.sh"]
+CMD ["/bin/bash"]
